@@ -24,13 +24,13 @@ MessengerScraper – PHP Library for Extracting Group Titles
 <?php
 require_once __DIR__ . '/src/MessengerScraper.php';
 
-$scraper = new MessengerScraper(20);
+$GroupTitle = new GroupTitle(20);
 
-// Telegram
-echo "Telegram: " . ($scraper->getTitle("https://t.me/English_National_Group") ?? "پیدا نشد") . PHP_EOL;
+$telegramUrl = 'https://t.me/+p4dnnFu1Clw1ZjNk';
+echo "Telegram : " . ($GroupTitle->getTitle($telegramUrl) ?? "پیدا نشد") . PHP_EOL;
 
-// Eitaa
-echo "Eitaa: " . ($scraper->getTitle("https://eitaa.com/joinchat/2368602885Cf7be009384") ?? "پیدا نشد") . PHP_EOL;
+$eitaaUrl = 'https://eitaa.com/joinchat/3629122773C8f6cb2bfff';
+echo "Eitaa : " . ($GroupTitle->getTitle($eitaaUrl) ?? "پیدا نشد") . PHP_EOL;
 
-// WhatsApp
-echo "WhatsApp: " . ($scraper->getTitle("https://whatsapgrouplink.com/join-new-actress-whatsapp-group-link/") ?? "پیدا نشد") . PHP_EOL;
+$whatsappUrl = 'https://chat.whatsapp.com/G1QSPihnowRHcdGyCX5bkw?mode=ems_wa_c';
+echo "WhatsApp : " . ($GroupTitle->getTitle($whatsappUrl) ?? "پیدا نشد") . PHP_EOL;
