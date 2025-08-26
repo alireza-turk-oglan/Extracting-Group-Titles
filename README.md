@@ -5,9 +5,9 @@ MessengerScraper – PHP Library for Extracting Group Titles
 یک کتابخانه‌ی ساده‌ی PHP برای گرفتن نام گروه‌ها/کانال‌ها از لینک‌های دعوت  
 پشتیبانی از پلتفرم‌های زیر:
 
-- [x] Telegram (`t.me` / `telegram.me`)
-- [x] Eitaa (`eitaa.com`)
-- [x] WhatsApp (`chat.whatsapp.com`)
+- Telegram (`t.me` / `telegram.me`)
+- Eitaa (`eitaa.com`)
+- WhatsApp (`chat.whatsapp.com`)
 
 ---
 
